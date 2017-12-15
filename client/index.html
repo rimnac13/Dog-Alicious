@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="dogaliciousApp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="stylesheet/styles.css">
+
+    <script src="jquery/dist/jquery.min.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+
+    <script src="angular/angular.js"></script>
+    <script src="angular-route/angular-route.js"></script>
+
+    <script src="https://use.fontawesome.com/6df1edd57b.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister|Montserrat|Open+Sans" rel="stylesheet">
+
+    <script type="text/javascript" src="app.js"></script>
+
+    <title>DOG-ALICIOUS</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <a href= "/">
+            <img src="/images/logo.png" class="logo" alt="Logo">
+          </a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <ul class="nav navbar-nav navbar-right collapse navbar-collapse">
+            <li><a href="#/!">Home</a></li>
+            <li><a href="#!services">Services</a></li>
+            <li><a href="#!clients">New Clients</a></li>
+            <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">About Us<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#!team"> Our Team</a></li>
+                <li><a href="#!employment">Employment</a></li>
+              </ul>
+            </li>
+            <li><a href="#!faq">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div ng-view></div>
+    <div class="footer row">
+      <div class="col-sm-4">
+        <h4>Links</h4>
+        <ul class="list-unstyled">
+          <li><a href="#/!">Home</a></li>
+          <li><a href="#!services">Services</a></li>
+          <li><a href="#!clients">New Clients</a></li>
+          <li><a href="#!team"> Our Team</a></li>
+          <li><a href="#!employment">Employment</a></li>
+          <li><a href="#!faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-4">
+        <h4>Contact Us</h4>
+        <ul class="list-unstyled">
+          <li><a href="mailto:chelsea@dog-alicious.net" data-content="chelsea@dog-alicious.net" data-type="mail">chelsea@dog-alicious.net</a></li>
+          <li>312-373-0434</li>
+        </ul>
+      </div>
+      <div class="col-sm-4">
+        <h4>Additional Info</h4>
+        <p>Zip Codes Serviced: 60610, 60611, 60654, 60622, 60661, 60647, 60642</p>
+        <p>© 2016 DOG-ALICOUS. All Rights Reserved</p>
+      </div>
+    </div>
+  </body>
+</html>
